@@ -1,6 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 :root {
     --color-date: #C3C3C3;
-    --color-date: #7B7B7B;
+    --color-icons: #7B7B7B;
     --color-arrow: #1875D0;
+    --color-title: #464646;
     --bg-color-author: #9DC9FE;
+    --bg-color-container: #353B3F;
+    --white: #fff
+}
+html {
+    font-size: 10px;
+}
+body {
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    background-color: var(--bg-color-container);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card {
+    background-color: var(--white);
+    width: 90%;
+    max-width: 90rem;
+    display: flex;
+    height: 45rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.card__main {
+    position: relative;
+    width: 56rem;
+    display: flex;
+    align-items: flex-end;
+}
+.card__main-image {
+    width: 95%;
+    max-width: 53rem;
+    position: absolute;
+    top: -3rem;
+    right: 0;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.card__block-bottom {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.card__aside {
+    width: 100%;
+    max-width: 34rem;
+    padding: 2.5rem;
+    padding-left: 3.5rem;
+    position: relative;
+}
+.card__aside-title {
+    color: var(--color-title);
+    font-size: 2rem;
+    font-weight: bold;
+}
+.card__aside-author {
+    background-color: var(--bg-color-author);
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    width: 33%;
+    margin: 2rem 0 1rem;
+    padding: 0.5rem;
+    border-radius: 10rem;
+}
+.card__aside-avatar {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%; 
+}
+.card__aside-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.card__aside-paragraph {
+    border-top: 0.2rem solid var(--color-date);
+    padding: 2rem 0;
+    line-height: 2.5rem;
+    font-size: 1.4rem;
+    text-align: justify;
+}
+.fa-circle-arrow-down {
+    background-color: var(--white);
+    color: var(--color-arrow);
+    border: 0.1rem solid var(--color-arrow);
+    border-radius: 50%;
+    font-size: 70px;
+    position: absolute;
+    bottom: -4rem;
+    right: 10rem;
 }
