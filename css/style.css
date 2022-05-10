@@ -47,8 +47,26 @@ body {
 }
 .card__block-bottom {
     padding: 3rem;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
+}
+.card__main-date {
+    color: var(--color-date);
+    font-weight: bold;
+}
+.card__main-day {
+    font-size: 10rem;
+}
+.card__main-month {
+    font-size: 3rem;
+}
+.card__main-icons {
+    color: var(--color-icons);
+    font-size: 2.7rem;
+    display: flex;
+    gap: 3rem;
 }
 .card__aside {
     width: 100%;
@@ -89,13 +107,19 @@ body {
     font-size: 1.4rem;
     text-align: justify;
 }
-.fa-circle-arrow-down {
-    background-color: var(--white);
-    color: var(--color-arrow);
-    border: 0.1rem solid var(--color-arrow);
-    border-radius: 50%;
-    font-size: 70px;
+.center-arrow {
+    background-color: var(--color-arrow);
+    font-size: 5rem;
+    width: 7rem;
+    height: 7rem;
     position: absolute;
-    bottom: -4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    bottom: -3.5rem;
     right: 10rem;
+}
+.fa-arrow-down {
+    color: var(--white);
 }
